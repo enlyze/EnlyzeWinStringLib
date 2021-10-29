@@ -5,7 +5,7 @@
 
 #include "EnlyzeWinStringLib.h"
 
-extern "C" unsigned int SysStringLen(const wchar_t* pbstr);
+extern "C" unsigned int __stdcall SysStringLen(const wchar_t* pbstr);
 
 
 static size_t
