@@ -85,7 +85,7 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalOptions>-march=pentium-mmx</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\EnlyzeWinCompatLib\src\libcxx\include;utf8-utf16-converter/converter/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\EnlyzeWinCompatLib\src\libcxx\include;utf8-utf16-converter/converter/include</AdditionalIncludeDirectories>
       <LanguageStandard_C>stdc11</LanguageStandard_C>
     </ClCompile>
     <Link>
@@ -107,7 +107,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <AdditionalOptions>-flto -march=pentium-mmx</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\EnlyzeWinCompatLib\src\libcxx\include;utf8-utf16-converter/converter/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\EnlyzeWinCompatLib\src\libcxx\include;utf8-utf16-converter/converter/include</AdditionalIncludeDirectories>
       <LanguageStandard_C>stdc11</LanguageStandard_C>
     </ClCompile>
     <Link>
