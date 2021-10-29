@@ -2,9 +2,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// The type of a single Unicode codepoint
-typedef uint32_t codepoint_t;
-
 // The last codepoint of the Basic Multilingual Plane, which is the part of Unicode that
 // UTF-16 can encode without surrogates
 #define BMP_END 0xFFFF
@@ -148,7 +145,7 @@ static int calculate_utf8_len(codepoint_t codepoint)
 // index: The first empty index on the string.
 //
 // return: The number of characters written to the string.
-static size_t encode_utf8(codepoint_t codepoint, utf8_t* utf8, size_t len, size_t index)
+size_t encode_utf8(codepoint_t codepoint, utf8_t* utf8, size_t len, size_t index)
 {
     int size = calculate_utf8_len(codepoint);
 

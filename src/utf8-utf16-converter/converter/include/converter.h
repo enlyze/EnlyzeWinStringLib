@@ -6,6 +6,9 @@
 typedef uint8_t utf8_t; // The type of a single UTF-8 character
 typedef uint16_t utf16_t; // The type of a single UTF-16 character
 
+// The type of a single Unicode codepoint
+typedef uint32_t codepoint_t;
+
 /*
  * Converts a UTF-16 string to a UTF-8 string.
  * 
@@ -63,3 +66,5 @@ size_t utf8_to_utf16(
     utf8_t const* utf8, size_t utf8_len, 
     utf16_t* utf16,     size_t utf16_len
 );
+
+size_t encode_utf8(codepoint_t codepoint, utf8_t* utf8, size_t len, size_t index);
