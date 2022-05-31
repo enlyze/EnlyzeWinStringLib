@@ -45,6 +45,7 @@ Str1252ToStr(const std::string& str1252)
         }
     }
 
+    str.resize(i);
     return str;
 }
 
